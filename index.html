@@ -37,10 +37,40 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" href="./assets/js/script.js">
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
+    <style>
+      body {margin:0;}
+      
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .navbar a:hover {
+        background: rgba(252, 6, 6, 0.966);
+        color: black;
+      }
+      
+      .main {
+        padding: 16px;
+        margin-bottom: 30px;
+        height: 1500px; /* Used in this example to enable scrolling */
+      }
+      </style>
   </head>
   <body>
-      <!-- Hero Area Start -->
       <div id="hero-area" class="hero-area-bg">
         <div class="overlay"></div>
         <div class="container">
@@ -165,7 +195,7 @@
     <section id="portfolios" class="section-padding">
       <!-- Container Starts -->
       <div class="container">
-        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Gallery</h2>
+        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Events</h2>
           <!-- Portfolio Recent Projects -->
           <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
@@ -406,13 +436,16 @@
         </div>
       </div>
     </footer>
-    <!-- Footer Section End -->
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="icon-arrow-up"></i>
-    </a>
-
+    <div class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#portfolios">Events</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="#contact">Statics</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>

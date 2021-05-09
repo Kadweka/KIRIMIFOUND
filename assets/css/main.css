@@ -195,7 +195,9 @@ section1,section2,section3,section4,section5,section6{
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-
+.bs-example{
+  margin: 20px;
+}
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
